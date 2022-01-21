@@ -23,8 +23,6 @@ jobs:
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git clone https://github.com/apoorva-raj/test.git apk
-          cd apk
           date > newFile1.txt
           git config user.name github-actions
           git config user.email github-actions@github.com
