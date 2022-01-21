@@ -24,6 +24,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git clone --single-branch --branch apk https://github.com/apoorva-raj/test.git
+          
           git branch apk origin/apk
           git checkout --orphan temporary
           echo "one"
@@ -36,6 +37,7 @@ jobs:
           git config user.email github-actions@github.com
           git add .
           git commit -m "gen"
+          git pull https://github.com/apoorva-raj/test.git
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
