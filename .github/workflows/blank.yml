@@ -24,6 +24,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git clone --single-branch --branch apk https://github.com/apoorva-raj/test.git
+          git branch apk origin/apk
           git checkout --orphan temporary
           echo "one"
           git branch -D apk
