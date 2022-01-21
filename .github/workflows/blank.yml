@@ -28,8 +28,8 @@ jobs:
           echo "Nilee" > newFile.txt
           git add newFile.txt
           git commit -m "gen"
-          git -D apk
-          git -m apk
+          git branch -D apk
+          git branch -m apk
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
