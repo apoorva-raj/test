@@ -27,17 +27,11 @@ jobs:
           
           git branch apk origin/apk
           git checkout --orphan temporary
-          echo "one"
-          git branch -D apk
-          echo "2"
-          git branch -m apk
-          echo "3"
           echo "Nilee" > newFile.txt
-          git config user.name github-actions
-          git config user.email github-actions@github.com
           git add .
           git commit -m "gen"
-          git pull https://github.com/apoorva-raj/test.git
+          git -D apk
+          git -m apk
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
