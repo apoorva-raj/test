@@ -15,14 +15,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Download repository
-    - uses: actions/checkout@v2
-    - run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git checkout master
-        cd test
-        echo "Nile" > newFile.txt
-        git add .
-        git commit -m "generated"
-        git push
+      - name: Download repository
+      - uses: actions/checkout@v2
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git checkout master
+          cd test
+          echo "Nile" > newFile.txt
+          git add .
+          git commit -m "generated"
+          git push
