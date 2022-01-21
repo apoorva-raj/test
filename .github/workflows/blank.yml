@@ -27,8 +27,11 @@ jobs:
           git branch apk origin/apk
           cd test
           git checkout --orphan temporary
+          echo "one"
           git branch -D apk
+          echo "2"
           git branch -m apk
+          echo "3"
           echo "Nilee" > newFile.txt
           git config user.name github-actions
           git config user.email github-actions@github.com
