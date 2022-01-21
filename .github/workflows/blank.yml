@@ -37,6 +37,10 @@ jobs:
           git config user.email github-actions@github.com
           git add newFile.txt
           git commit -m "gen"
-          git push -u origin apk
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+           github_token: ${{ secrets.GITHUB_TOKEN }}
+           branch: ${{ github.ref }}
           
   
