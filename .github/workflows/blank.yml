@@ -20,7 +20,9 @@ jobs:
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
+          git branch apk
+          git checkout apk
           echo "Nile" > newFile.txt
           git add .
-          git commit -m "generated"
+          git commit -m "generated apk"
           git push
