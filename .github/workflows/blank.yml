@@ -24,7 +24,6 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git switch --orphan temp
-          git checkout temp
           git push origin --delete apk
           date > newFile1.txt
           git branch -m apk
