@@ -26,8 +26,8 @@ jobs:
           git checkout --orphan temp
           git push origin --delete apk
           git reset HEAD --
-          git rm -rf dd
-          git rm -r .gitignore README.md dd.txt newFile.txt newFile1.txt
+          git rm -rf test/dd
+          git rm -r test/.gitignore README.md dd.txt newFile.txt newFile1.txt
           date > newFile1.txt
           git branch -m apk
           git config user.name github-actions
