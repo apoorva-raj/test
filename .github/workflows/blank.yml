@@ -33,6 +33,8 @@ jobs:
           git branch apk
           git checkout apk
           echo "Nilee" > newFile.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add newFile.txt
           git commit -m "gen"
           git push -u origin apk
