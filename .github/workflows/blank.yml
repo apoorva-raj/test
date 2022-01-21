@@ -27,7 +27,7 @@ jobs:
           git branch apk origin/apk
           cd test
           git checkout --orphan temporary
-          git branch -d apk
+          git branch -D apk
           git branch -m apk
           echo "Nilee" > newFile.txt
           git config user.name github-actions
