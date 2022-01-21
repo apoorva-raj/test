@@ -25,7 +25,7 @@ jobs:
           git config user.email github-actions@github.com
           git checkout --orphan temp
           git push origin --delete apk
-          git rm -rf
+          git -r dd .gitignore README.md dd.txt newFile.txt newFile1.txt
           date > newFile1.txt
           git branch -m apk
           git config user.name github-actions
