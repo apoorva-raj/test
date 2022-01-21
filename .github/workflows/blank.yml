@@ -23,15 +23,16 @@ jobs:
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git checkout main
+          git checkout --orphan temp
           git push origin --delete apk
           git status
           date > newFile1.txt
+          git branch -m apk
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add newFile1.txt
           git commit -m "gen"
-          git push
+          git push -u origin apk
 
           
   
