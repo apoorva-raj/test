@@ -33,6 +33,7 @@ jobs:
           git status
           git commit -m "gen"
           git branch -D apk
+          git push origin --delete apk
           git branch -m apk
       - name: Push changes
         uses: ad-m/github-push-action@master
