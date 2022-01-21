@@ -26,7 +26,7 @@ jobs:
           git clone -b apk https://github.com/apoorva-raj/test.git
           git checkout --orphan temporary
           echo "Nilee" > newFile.txt
-          git add .
+          git add newFile.txt
           git commit -m "gen"
           git -D apk
           git -m apk
