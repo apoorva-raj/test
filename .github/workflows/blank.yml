@@ -24,6 +24,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git clone https://github.com/apoorva-raj/test.git
+          cd test
           git branch -a
           git checkout main
           git branch -d apk
