@@ -22,7 +22,7 @@ jobs:
           git config user.email github-actions@github.com
           git branch apk
           git checkout apk
-          echo "Nile" > newFile.txt
+          echo "Nile1" > newFile.txt
           ls
           git add .
           git commit -m "generated apk"
