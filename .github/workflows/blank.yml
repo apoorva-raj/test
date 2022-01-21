@@ -23,7 +23,8 @@ jobs:
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git clone -b apk https://github.com/apoorva-raj/test.git
+          git clone -b apk https://github.com/apoorva-raj/test.git apk
+          cd apk
           git checkout --orphan temporary
           echo "Nilee" > newFile.txt
           git add newFile.txt
