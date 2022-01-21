@@ -26,12 +26,9 @@ jobs:
           git clone https://github.com/apoorva-raj/test.git
           git branch apk origin/apk
           cd test
-          git branch -a
-          git checkout apk
-          git checkout main
+          git checkout --orphan temporary
           git branch -d apk
-          git branch apk
-          git checkout apk
+          git branch -m apk
           echo "Nilee" > newFile.txt
           git config user.name github-actions
           git config user.email github-actions@github.com
@@ -41,6 +38,6 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
            github_token: ${{ secrets.GITHUB_TOKEN }}
-           branch: ${{ github.ref }}
+           branch: apk
           
   
