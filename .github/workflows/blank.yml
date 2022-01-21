@@ -20,10 +20,10 @@ jobs:
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
+          git checkout main
+          git branch -d apk
           git branch apk
-          git checkout apk
-          echo "Nile2" > newFile.txt
-          ls
-          git add .
+          echo "Nile3" > newFile.txt
+          git add newFile.txt
           git commit -m "generated apk"
           git push -u origin apk
