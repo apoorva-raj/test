@@ -22,7 +22,7 @@ jobs:
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git clone 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@github.com/apoorva-raj/test.git
+          git clone https://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@github.com/apoorva-raj/test.git
           git branch -a
           git checkout main
           git branch -d apk
