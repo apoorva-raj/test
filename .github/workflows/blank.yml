@@ -27,6 +27,7 @@ jobs:
           git branch apk origin/apk
           cd test
           git branch -a
+          git checkout apk
           git checkout main
           git branch -d apk
           git branch apk
